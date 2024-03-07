@@ -1,0 +1,109 @@
+/* Global styles for root element */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Styles for the main App component */
+.App {
+  border: 3px solid #646cff;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto; 
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Animation for fading in */
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Styles for heading */
+h1 {
+  color: #646cff;
+  font-size: 3.2rem;
+}
+
+/* Styles for welcome text */
+.welcome {
+  text-decoration: underline;
+}
+
+/* Styles for hover effect on welcome text */
+.welcome:hover {
+  color: white;
+}
+
+/* Styles for form */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+}
+
+/* Styles for form inputs */
+.form-input {
+  font-family: inherit;
+  margin: 1rem 0; 
+  border: 2px solid #646cff;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  border-radius: 12px;
+  /* Animation for sliding in from left */
+  animation: slideInLeft 0.5s ease forwards;
+}
+
+/* Keyframe animation for fading in */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframe animation for sliding in from left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .App {
+    max-width: 90%; 
+    padding: 1rem;
+  }
+
+  /* Adjustments for form inputs */
+  .form-input {
+    font-size: 1.75rem; 
+    padding: 0.5rem;
+  }
+}
+
+/* Media queries for even smaller screens */
+@media (max-width: 480px) {
+  /* Adjustments for even smaller screens */
+  h1 {
+    font-size: 1.5rem; 
+  }
+
+  /* Adjustments for form inputs */
+  .form-input {
+    font-size: 1rem; 
+    padding: 0.25rem;
+  }
+}
